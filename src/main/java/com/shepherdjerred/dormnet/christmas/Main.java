@@ -12,7 +12,7 @@ public class Main {
     public static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        port(8080);
+        port(80);
         staticFiles.location("/assets");
         new Router().setupRoutes();
     }
