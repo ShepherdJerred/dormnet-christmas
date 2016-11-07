@@ -1,0 +1,33 @@
+#content {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/bg.jpg") center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 15vh !important;
+}
+
+.countdown {
+  margin-top: 10vh;
+
+  div {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    span {
+      font-size: 50px;
+      font-weight: 800;
+      font-family: "Lato Black", sans-serif;
+    }
+  }
+}
+
+#fact {
+  margin-top: 10vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}

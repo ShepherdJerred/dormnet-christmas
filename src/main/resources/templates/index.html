@@ -20,29 +20,39 @@
 </head>
 
 <body>
-<div class="pure-g">
+<div class="pure-g" id="content">
     <div class="pure-u-1-5">
     </div>
     <div class="pure-u-3-5">
-        <h1>Time left 'till Christmas</h1>
-        <div class="pure-g">
-            <div class="pure-u-1-5">
-                <span id="months"></span>
+        <h1>Christmas Countdown</h1>
+
+        <div class="pure-g countdown" id="christmasTime">
+            <div class="pure-u-1-4">
+                <span class="days"></span>
+                <br>Days
             </div>
-            <div class="pure-u-1-5">
-                Months
+            <div class="pure-u-1-4">
+                <span class="hours"></span>
+                <br>Hours
             </div>
-            <div class="pure-u-1-5">
-                Months
+            <div class="pure-u-1-4">
+                <span class="minutes"></span>
+                <br>Minutes
             </div>
-            <div class="pure-u-1-5">
-                Months
-            </div>
-            <div class="pure-u-1-5">
-                Months
+            <div class="pure-u-1-4">
+                <span class="seconds"></span>
+                <br>Seconds
             </div>
         </div>
+
         <h2 id="fact"></h2>
+
+        <div class="pure-g countdown" id="lightingTime">
+            <div class="pure-u-1">
+                <span class="days"></span>
+                <br>Days until the lighting
+            </div>
+        </div>
     </div>
 </div>
 </body>

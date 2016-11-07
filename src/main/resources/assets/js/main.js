@@ -1,11 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-    countdown(new Date(new Date().getFullYear(), 11, 25), updateTime);
+    countdown(new Date(new Date().getFullYear(), 11, 25), updateChristmasTime);
+    countdown(new Date(new Date().getFullYear(), 10, 28), updateLightingTime);
     updateFact();
 }, false);
 
-function updateTime(ts) {
-    document.getElementById('countdown').innerHTML = ts.days;
+function updateChristmasTime(ts) {
+    document.querySelector('#christmasTime .days').innerHTML = ts.days + ts.months * 30;
+    document.querySelector('#christmasTime .hours').innerHTML = ts.hours;
+    document.querySelector('#christmasTime .minutes').innerHTML = ts.minutes;
+    document.querySelector('#christmasTime .seconds').innerHTML = ts.seconds;
+}
 
+function updateLightingTime(ts) {
+    document.querySelector('#lightingTime .days').innerHTML = ts.days + ts.months * 30;
 }
 
 function showNotification() {
