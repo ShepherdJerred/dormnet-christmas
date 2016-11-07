@@ -19,7 +19,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.shepherdjerred.raspastat.web.Main</mainClass>
+                            <mainClass>com.shepherdjerred.dormnet.christmas.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -36,6 +36,14 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.5.0</version>
+                <configuration>
+                    <mainClass>com.shepherdjerred.dormnet.christmas.Main</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
