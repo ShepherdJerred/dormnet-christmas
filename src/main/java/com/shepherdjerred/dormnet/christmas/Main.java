@@ -12,9 +12,17 @@ public class Main {
     public static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        port(80);
+        port(getHerokuPort());
         staticFiles.location("/assets");
         new Router().setupRoutes();
+    }
+
+    static int getHerokuPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 80;
     }
 
     public static void stop() {
