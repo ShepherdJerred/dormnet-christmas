@@ -53,7 +53,7 @@
                     <jdkVersion>1.8</jdkVersion>
                     <appName>dormnet-christmas</appName>
                     <processTypes>
-                        <web>java -jar ./target/dormnet.christmas-0.1.0.jar</web>
+                        <web>java -jar target/dormnet.christmas-0.1.0.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
