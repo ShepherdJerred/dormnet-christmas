@@ -22,6 +22,7 @@ public class Main {
         if (processBuilder.environment().get("PORT") != null) {
             return Integer.parseInt(processBuilder.environment().get("PORT"));
         }
+        logger.info("Heroku not found! Falling back to port 8080");
         return 8080;
     }
 
