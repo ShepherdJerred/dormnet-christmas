@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900|Open+Sans:300,400,400i,600,700,800");
 #content {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/bg.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/bg.jpg") center;
   background-size: cover;
   color: #fff;
   text-align: center; }
 
 h1 {
-  margin-top: 15vh !important; }
+  margin-top: 12.5vh !important;
+  font-size: 50px; }
 
 .countdown {
   margin-top: 10vh; }
@@ -16,7 +17,7 @@ h1 {
     font-weight: 300;
     font-family: "Open Sans", sans-serif; }
     .countdown div span {
-      font-size: 50px;
+      font-size: 60px;
       font-weight: 800;
       font-family: "Lato Black", sans-serif; }
 
