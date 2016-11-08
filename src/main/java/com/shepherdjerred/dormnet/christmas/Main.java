@@ -22,7 +22,7 @@ public class Main {
         if (processBuilder.environment().get("PORT") != null) {
             return Integer.parseInt(processBuilder.environment().get("PORT"));
         }
-        return 80;
+        return 8080;
     }
 
     public static void stop() {
