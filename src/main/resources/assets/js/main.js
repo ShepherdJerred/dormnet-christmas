@@ -19,6 +19,10 @@ function showNotification() {
 
 }
 
+/*
+ Facts from http://www.factretriever.com/christmas-facts
+ */
+
 function updateFact() {
     var request = new XMLHttpRequest();
     request.onload = function () {
