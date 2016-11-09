@@ -9,6 +9,8 @@ function updateChristmasTime(ts) {
     document.querySelector('#christmasTime .hours').innerHTML = ts.hours;
     document.querySelector('#christmasTime .minutes').innerHTML = ts.minutes;
     document.querySelector('#christmasTime .seconds').innerHTML = ts.seconds;
+    if (ts.minutes == 59 || ts.minutes == 0)
+        updateFact();
 }
 
 function updateLightingTime(ts) {
@@ -20,7 +22,10 @@ function showNotification() {
 }
 
 /*
- Facts from http://www.factretriever.com/christmas-facts
+ Facts from
+ http://www.factretriever.com/christmas-facts
+ http://list25.com/25-bizarre-interesting-facts-christmas
+ http://www.goodreads.com/quotes/tag/christmas
  */
 
 function updateFact() {
