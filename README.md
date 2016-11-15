@@ -3,9 +3,9 @@ This is a very simple application which counts down to Christmas! It was made fo
 
 
 ###Overview
-Written in Java with the Spark Framework. Front-end uses Pure.css along with Countdown.js, and SASS.
+Dormnet Christmas is written in Java with the Spark Framework. The Front-end uses Pure.css along with Countdown.js, and SASS.
 
-Features
+###Features
  * 78 random facts, updated hourly
  * Counts down 'till Christmas and the lighting of the tree at Harding
  * Extremely lightweight, no web server required!
