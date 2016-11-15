@@ -8,6 +8,6 @@ Dormnet Christmas is written in Java with the Spark Framework. The Front-end use
 ###Features
  * 78 random facts, updated hourly
  * Counts down 'till Christmas and the lighting of the tree at Harding
- * Extremely lightweight, no web server required!
-
+ * Extremely lightweight!
+ 
 <img src="http://i.imgur.com/kTyTPMZ.jpg">
