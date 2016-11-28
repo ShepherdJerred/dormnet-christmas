@@ -9,12 +9,20 @@ function updateChristmasTime(ts) {
     document.querySelector('#christmasTime .hours').innerHTML = ts.hours;
     document.querySelector('#christmasTime .minutes').innerHTML = ts.minutes;
     document.querySelector('#christmasTime .seconds').innerHTML = ts.seconds;
-    if (ts.minutes == 59 || ts.minutes == 0 && ts.seconds == 0)
+    if ((ts.minutes == 59 || ts.minutes == 0) && ts.seconds == 0 && ts.milliseconds == 1) {
         updateFact();
+    }
 }
 
 function updateLightingTime(ts) {
-    document.querySelector('#lightingTime .days').innerHTML = ts.days + ts.months * 30;
+    if (ts.days == 0) {
+        document.querySelector('#lightingTime .days').innerHTML = "The lighting is today!";
+        document.querySelector('#lightingTime p').style.display = "none";
+    } else if (ts.days > 0) {
+        document.querySelector('#lightingTime .days').innerHTML = ts.days + ts.months * 30;
+    } else {
+        document.querySelector('#lightingTime').style.display = "none";
+    }
 }
 
 function showNotification() {
