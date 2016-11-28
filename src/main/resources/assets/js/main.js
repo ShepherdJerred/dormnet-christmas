@@ -18,6 +18,7 @@ function updateLightingTime(ts) {
     if (ts.days == 0) {
         document.querySelector('#lightingTime .days').innerHTML = "The lighting is today!";
         document.querySelector('#lightingTime p').style.display = "none";
+        document.querySelector('#lightingTime .days').style.fontSize = 40;
     } else if (ts.days > 0) {
         document.querySelector('#lightingTime .days').innerHTML = ts.days + ts.months * 30;
     } else {
