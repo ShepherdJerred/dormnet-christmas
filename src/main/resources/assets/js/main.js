@@ -1,5 +1,6 @@
 var christmas = new Date(new Date().getFullYear(), 11, 25);
 var lightingDay = new Date(new Date().getFullYear(), 10, 28);
+var lastChange = -1;
 
 document.addEventListener('DOMContentLoaded', function () {
     countdown(christmas, updateChristmasTime);
@@ -12,8 +13,9 @@ function updateChristmasTime(ts) {
     document.querySelector('#christmasTime .hours').innerHTML = ts.hours;
     document.querySelector('#christmasTime .minutes').innerHTML = ts.minutes;
     document.querySelector('#christmasTime .seconds').innerHTML = ts.seconds;
-    if ((ts.minutes == 59 || ts.minutes == 0) && ts.seconds == 0 && ts.milliseconds == 1) {
+    if (ts.minutes == 0 && lastChange != ts.hours) {
         updateFact();
+        lastChange = ts.hours;
     }
 }
 
