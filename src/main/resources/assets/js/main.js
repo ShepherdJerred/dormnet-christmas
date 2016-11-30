@@ -1,6 +1,9 @@
+var christmas = new Date(new Date().getFullYear(), 11, 25);
+var lightingDay = new Date(new Date().getFullYear(), 10, 28);
+
 document.addEventListener('DOMContentLoaded', function () {
-    countdown(new Date(new Date().getFullYear(), 11, 25), updateChristmasTime);
-    countdown(new Date(new Date().getFullYear(), 10, 28), updateLightingTime);
+    countdown(christmas, updateChristmasTime);
+    countdown(lightingDay, updateLightingTime);
     updateFact();
 }, false);
 
@@ -20,9 +23,11 @@ function updateLightingTime(ts) {
         document.querySelector('#lightingTime p').style.display = "none";
         document.querySelector('#lightingTime .days').style.fontSize = "40px";
     } else if (ts.days > 0) {
+        if (lightingDay < new Date()) {
+            document.querySelector('#lightingTime').style.display = "none";
+            return;
+        }
         document.querySelector('#lightingTime .days').innerHTML = ts.days + ts.months * 30;
-    } else {
-        document.querySelector('#lightingTime').style.display = "none";
     }
 }
 

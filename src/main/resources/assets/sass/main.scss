@@ -25,3 +25,7 @@ a:hover {
   color: #fff;
   background-color: #000;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
