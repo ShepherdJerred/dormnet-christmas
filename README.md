@@ -1,4 +1,6 @@
 # dormnet-christmas
+[![Build Status](https://travis-ci.org/ShepherdJerred/dormnet-christmas.svg?branch=master)](https://travis-ci.org/ShepherdJerred/dormnet-christmas)
+
 This is a very simple application which counts down to Christmas! It was made for DormNet at Harding University, and is on display at our helpdesk. It's currently hosted on Heroku, and is accessible at https://dormnet-christmas-countdown.herokuapp.com/
 
 
