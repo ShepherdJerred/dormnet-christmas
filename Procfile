@@ -1,1 +1,1 @@
-web: java -jar target/dormnet.christmas-0.1.0.jar
+web: npm start
