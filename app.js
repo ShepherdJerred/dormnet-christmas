@@ -2,7 +2,7 @@ import './src/scss/main.scss';
 import './node_modules/normalizecss/normalize.css';
 
 import countdownJS from './node_modules/countdown/countdown';
-import particlesJS from './node_modules/particlesjs/src/particles';
+import particlesJS from './node_modules/particlesjs/dist/particles.js';
 
 countdownJS(
   new Date(2017, 11, 25),
