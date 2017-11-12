@@ -45,8 +45,8 @@ module.exports = {
     }),
     new FaviconsWebpackPlugin({
       logo: './src/img/favicon.png',
-      background: '#663399',
-      title: 'Jerred Shepherd',
+      background: '#87D37C',
+      title: 'Harding Christmas',
       icons: {
         android: true,
         appleIcon: true,
