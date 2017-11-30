@@ -1,14 +1,6 @@
-# Dormnet Christmas
-[![Build Status](https://travis-ci.org/ShepherdJerred/dormnet-christmas.svg?branch=master)](https://travis-ci.org/ShepherdJerred/dormnet-christmas)
+# Harding Christmas
+[![Build Status](https://travis-ci.org/ShepherdJerred/dormnet-christmas.svg?branch=master)](https://travis-ci.org/ShepherdJerred/harding-christmas)
 
-A very simple application which counts shows the days until Christmas! It was made for DormNet at Harding University, and is on display at our helpdesk. It's currently hosted on Heroku, and is accessible [here](https://dormnet-christmas.herokuapp.com/)
+A very simple application which counts shows the days until Christmas! It was made for DormNet at Harding University, and is on display at our helpdesk during the Christmas season. It's currently hosted on Heroku, and is accessible [here](https://harding-christmas.herokuapp.com/
 
-### Overview
-Dormnet Christmas is written in Java with the Spark Framework. The Front-end uses the Pure CSS framework and Countdown.js.
-
-### Features
- * 78 random facts, updated hourly
- * Counts down 'till Christmas and the lighting of the tree at Harding
- * Extremely lightweight!
- 
-<img src="http://i.imgur.com/kTyTPMZ.jpg">
+<img src="https://i.imgur.com/2RenyBB.jpg">
