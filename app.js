@@ -5,7 +5,7 @@ import countdownJS from './node_modules/countdown/countdown';
 import particlesJS from './node_modules/particlesjs/dist/particles.js';
 
 countdownJS(
-  new Date(2017, 11, 25),
+  new Date(2017, 11, 26),
   function (ts) {
     document.getElementById('daysValue').innerHTML = ts.days;
     document.getElementById('hoursValue').innerHTML = ts.hours;
