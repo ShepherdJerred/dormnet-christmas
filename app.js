@@ -4,8 +4,23 @@ import './node_modules/normalizecss/normalize.css';
 import countdownJS from './node_modules/countdown/countdown';
 import particlesJS from './node_modules/particlesjs/dist/particles.js';
 
+let lightingDate = new Date(2018, 10, 26);
+let date = new Date();
+let year = date.getFullYear();
+let christmasThisYear = new Date(year, 11, 25);
+
+let countdownDate;
+
+if (date > lightingDate) {
+  countdownDate = christmasThisYear;
+  document.getElementById('title').innerText = 'Countdown to Christmas';
+} else {
+  countdownDate = lightingDate;
+  document.getElementById('title').innerText = 'Countdown to Lighting Ceremony'
+}
+
 countdownJS(
-  new Date(2017, 11, 26),
+  countdownDate,
   function (ts) {
     document.getElementById('daysValue').innerHTML = ts.days;
     document.getElementById('hoursValue').innerHTML = ts.hours;
