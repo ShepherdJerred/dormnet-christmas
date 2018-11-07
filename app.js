@@ -4,12 +4,12 @@ import './node_modules/normalizecss/normalize.css';
 import countdownJS from './node_modules/countdown/countdown';
 import particlesJS from './node_modules/particlesjs/dist/particles.js';
 
-let lightingDate = new Date(2018, 10, 26);
-let date = new Date();
-let year = date.getFullYear();
-let christmasThisYear = new Date(year, 11, 25);
+var lightingDate = new Date(2018, 10, 26);
+var date = new Date();
+var year = date.getFullYear();
+var christmasThisYear = new Date(year, 11, 25);
 
-let countdownDate;
+var countdownDate;
 
 if (date > lightingDate) {
   countdownDate = christmasThisYear;
