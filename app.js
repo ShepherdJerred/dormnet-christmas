@@ -4,7 +4,7 @@ import './node_modules/normalizecss/normalize.css';
 import countdownJS from './node_modules/countdown/countdown';
 import particlesJS from './node_modules/particlesjs/dist/particles.js';
 
-var lightingDate = new Date(2018, 10, 26);
+var lightingDate = new Date(2018, 10, 26, 19);
 var date = new Date();
 var year = date.getFullYear();
 var christmasThisYear = new Date(year, 11, 25);
